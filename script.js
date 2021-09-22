@@ -8,6 +8,7 @@ const App = {
             selected2: 'eth',
             leftInput: "",
             RightInput: "",
+            isActive: false,
         }
     },
     methods: {
@@ -33,10 +34,14 @@ const App = {
                 if (estimated) {
                     this.RightInput = estimated.estimatedAmount * leftInputValue
                 } else {
-                    this.RightInput = "–"
-                    alert("Введите сумму не меньше минимальной")
+                    console.log("Error")
                 }
+            } else {
+                this.RightInput = "–"
             }
+        },
+        myFilter() {
+            this.isActive = !this.isActive;
         },
     },
     //Получаем список валют 'List of available currencies' method;

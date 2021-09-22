@@ -17,7 +17,7 @@
             <h2 class="subtitle">Exchange fast and easy</h2>
             <form method="get" class="form">
                 <div class="exchange">
-                    <div class="currency">
+                    <div class="currency" v-bind:class="{ active1: isActive }">
                         <input type="text" class="input" v-bind:value="leftInput" v-on:input="leftInputChangeHandler">
                         <select class="select" v-model="selected1" v-on:click="selectOption">
                             <option v-for="option in selectValue" v-bind:value="option.ticker">
@@ -25,10 +25,10 @@
                             </option>
                         </select>
                     </div>
-                    <button class="swap_btn">
+                    <a class="swap_btn" v-on:click="myFilter" target="_blank" v-bind:class="{ active2: isActive }">
                         <img src="./img/swap.svg" class="swap">
-                    </button>
-                    <div class="currency currency_second">
+                    </a>
+                    <div class="currency currency_second" v-bind:class="{ active3: isActive }">
                         <input type="text" class="input" v-bind:value="RightInput">
                         <select class="select" v-model="selected2" v-on:click="selectOption">
                             <option v-for="option in selectValue" v-bind:value="option.ticker">

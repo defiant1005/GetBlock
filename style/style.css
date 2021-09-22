@@ -10,6 +10,9 @@
         -ms-flex-align: center;
             align-items: center;
 }
+.container {
+    width: 960px;
+}
 .title {
     font-style: normal;
     font-weight: 300;
@@ -81,7 +84,20 @@
     border-radius: 5px;
     cursor: pointer;
 }
-
+.swap_btn {
+    margin-top: 10px;
+    cursor: pointer;
+    display: block;
+}
+.active1 {
+    order: 3;
+}
+.active2 {
+    order: 2;
+}
+.active2 {
+    order: 1;
+}
 .swap {
     width: 24px;
     height: 24px;
