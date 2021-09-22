@@ -1,0 +1,138 @@
+.main {
+    padding-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.title {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 120%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #282828;
+    margin-bottom: 16px;
+}
+.subtitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #282828;
+    margin-bottom: 60px;
+}
+.form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.exchange {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.currency {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 440px;
+}
+.input {
+    width: 290px;
+    height: 50px;
+    background: #F6F7F8;
+    border: 1px solid #E3EBEF;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+.select {
+    width: 150px;
+    height: 50px;
+    background: #F6F7F8;
+    border: 1px solid #E3EBEF;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.swap {
+    width: 24px;
+    height: 24px;
+}
+.userInfoTitle {
+    margin: 32px 0px 8px 0px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    color: #282828;
+}
+.user_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.user_input {
+    width: 723px;
+}
+.form_btn {
+    width: 205px;
+    height: 50px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 120%;
+    margin: 0 auto;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #11B3FE;
+    border-radius: 5px;
+}
+option {
+    font-size: 16px;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+    display: flex;
+}
+option:hover {
+    background: #EAF1F7;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    font-size: 16px;
+}
+select {
+    font-size: 16px;
+}

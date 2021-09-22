@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/mobile.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="main">
+        <div class="container mx-auto px-4" id="app">
+            <h1 class="title">Crypto Exchange</h1>
+            <h2 class="subtitle">Exchange fast and easy</h2>
+            <form method="get" class="form">
+                <div class="exchange">
+                    <div class="currency">
+                        <input type="text" class="input" v-bind:value="leftInput" v-on:input="leftInputChangeHandler">
+                        <select class="select" v-model="selected1" v-on:click="selectOption">
+                            <option v-for="option in selectValue" v-bind:value="option.ticker">
+                                {{ option.ticker }}
+                            </option>
+                        </select>
+                    </div>
+                    <button class="swap_btn">
+                        <img src="./img/swap.svg" class="swap">
+                    </button>
+                    <div class="currency currency_second">
+                        <input type="text" class="input" v-bind:value="RightInput">
+                        <select class="select" v-model="selected2" v-on:click="selectOption">
+                            <option v-for="option in selectValue" v-bind:value="option.ticker">
+                                {{ option.ticker }}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <h2 class="userInfoTitle">Your Ethereum address</h2>
+                <div class="user_info">
+                    <input type="text" class="input user_input">
+                    <button type="submit" class="form_btn">Exchange</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
